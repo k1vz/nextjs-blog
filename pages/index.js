@@ -1,7 +1,18 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
+	const ImageComponent = () => (
+		<Image
+			src="/images/cf100f3a1dbff4212b5f7439d9a78688.png"
+			height={144}
+			width={144}
+			alt="Random Pic"
+		/>
+	)
+
+
   return (
     <div className="container">
       <Head>
@@ -33,6 +44,7 @@ export default function Home() {
           </a>
 
           <a
+
             href="https://github.com/vercel/next.js/tree/master/examples"
             className="card"
           >
